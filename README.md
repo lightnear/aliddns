@@ -23,5 +23,5 @@ aliddns_name 设置域名的A记录
 yum -y install curl bind-utils
 chmod +x aliddns.sh
 ```
-使用`crontab -e`加入执行计划，每分钟执行一次
+使用`crontab -e`加入执行计划，每分钟执行一次  
 `* * * * * /opt/aliddns.sh`
