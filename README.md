@@ -2,6 +2,7 @@
 ddns using aliyun dns
 
 ##config.ini配置说明
+
 ```
 access_key_id xxx
 access_key_secret xxxxx
@@ -19,9 +20,11 @@ aliddns_domain 设置的域名（必须归上面设置的阿里云帐号所有�
 aliddns_name 设置域名的A记录  
 
 ##CentOS7 使用方法
+
 ```
 yum -y install curl bind-utils
 chmod +x aliddns.sh
 ```
+
 使用`crontab -e`加入执行计划，每分钟执行一次  
 `* * * * * /opt/aliddns.sh`
